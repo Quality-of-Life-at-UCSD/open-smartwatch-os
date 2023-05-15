@@ -56,6 +56,9 @@
 #include <services/OswServiceTaskWiFi.h>
 #endif
 
+
+#include "./apps/test/test_display.h"
+
 OswHal* hal = nullptr;
 // OswAppRuntimeTest *runtimeTest = new OswAppRuntimeTest();
 
@@ -82,6 +85,7 @@ void setup() {
   watchFaceSwitcher.registerApp(new OswAppWatchfaceDigital());
   watchFaceSwitcher.registerApp(new OswAppWatchfaceBinary());
   mainAppSwitcher.registerApp(&watchFaceSwitcher);
+  mainAppSwitcher.registerApp(new OswAppTestDisplay());
 
   mainAppSwitcher.setup();
 

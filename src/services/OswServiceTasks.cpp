@@ -44,4 +44,4 @@ OswServiceTask* oswServiceTasks[] = {
     &OswServiceAllTasks::memory
 #endif
 };
-const unsigned char oswServiceTasksCount = OswUtil::size(oswServiceTasks);
+const unsigned char oswServiceTasksCount = 0; // OswUtil::size(oswServiceTasks);
